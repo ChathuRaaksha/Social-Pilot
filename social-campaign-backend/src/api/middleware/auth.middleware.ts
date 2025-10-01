@@ -14,6 +14,18 @@ export const authenticate = async (
   next: NextFunction
 ): Promise<void> => {
   try {
+    // In development mode, allow requests without authentication
+    if (config.nodeEnv === 'development') {
+      // Create a mock user for development
+      req.user = {
+        id: 'dev-user-001',
+        email: 'dev@example.com',
+        role: 'admin',
+        isActive: true
+      };
+      return next();
+    }
+
     const token = req.header('Authorization')?.replace('Bearer ', '');
 
     if (!token) {
