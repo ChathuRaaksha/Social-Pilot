@@ -7,12 +7,33 @@ import httpx
 from pydantic import BaseModel, Field
 from temporalio import activity
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "anthropic/claude-3.5-sonnet")
-OPENROUTER_FALLBACK_MODEL = os.getenv("OPENROUTER_FALLBACK_MODEL", "meta-llama/llama-3.1-405b-instruct")
+def _sanitize_env_value(value: str) -> str:
+    """Sanitize environment variable values to be ASCII-safe."""
+    if not value:
+        return value
+    
+    # Remove smart quotes instead of converting them
+    value = value.replace('\u201c', '').replace('\u201d', '')  # ""
+    value = value.replace('\u2018', '').replace('\u2019', '')  # ''
+    value = value.replace('\u2013', '-').replace('\u2014', '-')  # en/em dashes
+    
+    # Remove any leading/trailing quotes or spaces
+    value = value.strip().strip('"').strip("'").strip()
+    
+    # Encode to ASCII, replacing any remaining non-ASCII chars
+    try:
+        return value.encode('ascii', errors='replace').decode('ascii')
+    except Exception:
+        # Fallback: remove all non-ASCII characters
+        return ''.join(char for char in value if ord(char) < 128)
 
-APP_URL = os.getenv("APP_URL", "http://localhost")
-APP_NAME = os.getenv("APP_NAME", "Temporal Social Poster")
+# Load and sanitize ALL environment variables
+OPENROUTER_API_KEY = _sanitize_env_value(os.getenv("OPENROUTER_API_KEY", ""))
+OPENROUTER_MODEL = _sanitize_env_value(os.getenv("OPENROUTER_MODEL", "anthropic/claude-3.5-sonnet"))
+OPENROUTER_FALLBACK_MODEL = _sanitize_env_value(os.getenv("OPENROUTER_FALLBACK_MODEL", "meta-llama/llama-3.1-405b-instruct"))
+
+APP_URL = _sanitize_env_value(os.getenv("APP_URL", "http://localhost"))
+APP_NAME = _sanitize_env_value(os.getenv("APP_NAME", "Temporal Social Poster"))
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
@@ -20,6 +41,7 @@ OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 PLATFORM_SPECS: Dict[str, Dict] = {
     "linkedin":  {"max_chars": 3000, "hashtags_max": 10},
     "twitter":   {"max_chars": 280,  "hashtags_max": 6},     # X non-premium limit
+    "x":         {"max_chars": 280,  "hashtags_max": 6},     # X (same as twitter)
     "facebook":  {"max_chars": 63206, "hashtags_max": 15},
     "instagram": {"max_chars": 2200, "hashtags_max": 30},
 }
@@ -30,21 +52,39 @@ class DraftInput(BaseModel):
     tone: Optional[str] = None
 
 class PlatformRequest(BaseModel):
-    platform: str = Field(pattern="^(linkedin|twitter|facebook|instagram)$")
+    platform: str = Field(pattern="^(linkedin|twitter|x|facebook|instagram)$")
     draft_text: str
     idea: str
     audience: Optional[str] = None
     tone: Optional[str] = None
     image: Optional[str] = None  # pass URL or file ref if you have one
 
+def _sanitize_header_value(value: str) -> str:
+    """
+    Sanitize header values to ensure they're ASCII-safe.
+    Replace common Unicode characters with ASCII equivalents.
+    """
+    # Replace smart quotes with regular quotes
+    value = value.replace('\u201c', '"').replace('\u201d', '"')  # ""
+    value = value.replace('\u2018', "'").replace('\u2019', "'")  # ''
+    value = value.replace('\u2013', '-').replace('\u2014', '-')  # en/em dashes
+    
+    # Encode to ASCII, replacing any remaining non-ASCII chars
+    try:
+        return value.encode('ascii', errors='replace').decode('ascii')
+    except Exception:
+        # Fallback: remove all non-ASCII characters
+        return ''.join(char for char in value if ord(char) < 128)
+
 def _headers() -> Dict[str, str]:
     if not OPENROUTER_API_KEY:
         raise RuntimeError("OPENROUTER_API_KEY not set")
+    # Sanitize ALL header values to ensure they're ASCII-safe
     return {
-        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "Authorization": f"Bearer {_sanitize_header_value(OPENROUTER_API_KEY)}",
         "Content-Type": "application/json",
-        "HTTP-Referer": APP_URL,
-        "X-Title": APP_NAME,
+        "HTTP-Referer": _sanitize_header_value(APP_URL),
+        "X-Title": _sanitize_header_value(APP_NAME),
     }
 
 async def _chat_complete(messages: List[Dict], model: str) -> str:
@@ -54,8 +94,20 @@ async def _chat_complete(messages: List[Dict], model: str) -> str:
         "temperature": 0.7,
         "max_tokens": 800,
     }
+    headers = _headers()
+    
+    # Debug logging (remove in production)
+    print(f"[DEBUG] Using model: {model}")
+    print(f"[DEBUG] API Key present: {bool(OPENROUTER_API_KEY)}")
+    print(f"[DEBUG] API Key length: {len(OPENROUTER_API_KEY) if OPENROUTER_API_KEY else 0}")
+    print(f"[DEBUG] API Key first 10 chars: {OPENROUTER_API_KEY[:10] if OPENROUTER_API_KEY else 'NONE'}")
+    print(f"[DEBUG] Headers: {list(headers.keys())}")
+    
     async with httpx.AsyncClient(timeout=60) as client:
-        r = await client.post(OPENROUTER_URL, headers=_headers(), json=payload)
+        r = await client.post(OPENROUTER_URL, headers=headers, json=payload)
+        if not r.is_success:
+            print(f"[ERROR] OpenRouter API returned {r.status_code}")
+            print(f"[ERROR] Response: {r.text}")
         r.raise_for_status()
         data = r.json()
         return data["choices"][0]["message"]["content"]
@@ -134,6 +186,7 @@ async def curate_for_platform(req: PlatformRequest) -> str:
     platform_style = {
         "linkedin":  "Professional, value-led, skimmable with short lines. Avoid clickbait.",
         "twitter":   "Punchy. Max brevity. Prioritize hook, 1 insight, CTA, few hashtags.",
+        "x":         "Punchy. Max brevity. Prioritize hook, 1 insight, CTA, few hashtags.",
         "facebook":  "Conversational and friendly. 2–4 short lines. Clear CTA.",
         "instagram": "Aesthetic, warm, short lines. Hashtags at end. Add one emoji if natural."
     }[req.platform]

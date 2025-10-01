@@ -6,9 +6,11 @@ import asyncio
 from typing import Optional, List, Dict, Any
 
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 from temporalio.client import Client
 from workflows import SocialPostWorkflow  # your existing workflow
+from posting_workflows import PostToSocialMediaWorkflow, PostToSocialMediaRequest
 
 # -------- Config via env --------
 NAMESPACE   = os.getenv("TEMPORAL_NAMESPACE", "default")
@@ -129,6 +131,7 @@ async def _get_result(workflow_id: str, run_id: Optional[str] = None, timeout_se
 
 # -------- Flask app --------
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 @app.get("/healthz")
 def health():
@@ -184,6 +187,87 @@ def get_posts(workflow_id: str):
         result = run_async(_get_result(workflow_id, run_id=run_id, timeout_seconds=timeout_seconds))
         code = 200 if result.get("status") == "completed" else 202
         return jsonify(result), code
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.post("/api/v1/social-posts/publish")  # Publish a post to social media
+def publish_post():
+    """
+    POST JSON:
+    {
+      "post_id": "uuid",          // Database post ID
+      "platform": "linkedin",     // Platform to post to
+      "content": "text",          // Post content
+      "access_token": "token",    // OAuth access token
+      "author_urn": "urn:li:person:xxx",  // For LinkedIn (optional, will be fetched if not provided)
+      "image_url": "url",         // Optional
+      "use_mock": false,          // Use mock for testing
+      "wait": true                // Wait for result
+    }
+    """
+    try:
+        body = request.get_json(silent=True) or {}
+        
+        # Validate required fields
+        post_id = body.get("post_id")
+        platform = body.get("platform")
+        content = body.get("content")
+        access_token = body.get("access_token")
+        
+        if not all([post_id, platform, content, access_token]):
+            return jsonify({"error": "Missing required fields: post_id, platform, content, access_token"}), 400
+        
+        # Build workflow request
+        workflow_request = PostToSocialMediaRequest(
+            platform=platform,
+            post_id=post_id,
+            content=content,
+            access_token=access_token,
+            author_urn=body.get("author_urn"),
+            image_url=body.get("image_url"),
+            use_mock=body.get("use_mock", False)
+        )
+        
+        wait = bool(body.get("wait", True))
+        
+        # Start workflow
+        workflow_id = f"publish-{platform}-{post_id}"
+        
+        async def start_publish_workflow():
+            client = await _get_client()
+            handle = await client.start_workflow(
+                PostToSocialMediaWorkflow.run,
+                workflow_request.dict(),
+                id=workflow_id,
+                task_queue=TASK_QUEUE,
+            )
+            
+            if wait:
+                try:
+                    result = await asyncio.wait_for(handle.result(), timeout=60)
+                    return {
+                        **_handle_ids_dict(handle),
+                        "status": "completed",
+                        "result": result
+                    }
+                except asyncio.TimeoutError:
+                    return {
+                        **_handle_ids_dict(handle),
+                        "status": "running",
+                        "message": "Workflow still running. Poll for results."
+                    }
+            else:
+                return {
+                    **_handle_ids_dict(handle),
+                    "status": "started"
+                }
+        
+        result = run_async(start_publish_workflow())
+        code = 200 if result.get("status") == "completed" else 202
+        return jsonify(result), code
+        
+    except ValueError as ve:
+        return jsonify({"error": str(ve)}), 400
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
