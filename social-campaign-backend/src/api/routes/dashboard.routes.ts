@@ -1,5 +1,6 @@
 import { Router } from 'express';
-import * as dashboardController from '../controllers/dashboard.controller';
+// Use mock controller for now to avoid Temporal dependencies
+import * as dashboardController from '../controllers/dashboard.controller.mock';
 import { authenticate } from '../middleware/auth.middleware';
 import { query } from 'express-validator';
 
