@@ -10,10 +10,22 @@ interface AuthRequest extends Request {
 
 export const authenticate = async (
   req: AuthRequest,
-  res: Response,
+  _res: Response,
   next: NextFunction
 ): Promise<void> => {
   try {
+    // In development mode, allow requests without authentication
+    if (config.nodeEnv === 'development') {
+      // Create a mock user for development
+      req.user = {
+        id: 'dev-user-001',
+        email: 'dev@example.com',
+        role: 'admin',
+        isActive: true
+      };
+      return next();
+    }
+
     const token = req.header('Authorization')?.replace('Bearer ', '');
 
     if (!token) {
@@ -39,7 +51,7 @@ export const authenticate = async (
 };
 
 export const authorize = (...roles: string[]) => {
-  return (req: AuthRequest, res: Response, next: NextFunction) => {
+  return (req: AuthRequest, _res: Response, next: NextFunction) => {
     if (!req.user) {
       return next(new ApiError(401, 'Please authenticate'));
     }

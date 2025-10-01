@@ -3,7 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import config from './config';
-import logger, { stream } from './utils/logger';
+import logger from './utils/logger';
 import { errorHandler, notFound } from './api/middleware/error.middleware';
 import campaignRoutes from './api/routes/campaign.routes';
 import dashboardRoutes from './api/routes/dashboard.routes';
@@ -31,7 +31,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Request logging
-app.use((req, res, next) => {
+app.use((req, _res, next) => {
   logger.info(`${req.method} ${req.path}`, {
     query: req.query,
     body: req.body,
@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 });
 
 // Health check endpoint
-app.get('/health', (req, res) => {
+app.get('/health', (_req, res) => {
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),

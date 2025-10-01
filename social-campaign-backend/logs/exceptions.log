@@ -1,0 +1,802 @@
+2025-10-01 11:39:31 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:39:31 GMT+0200 (Central European Summer Time)","process":{"pid":45203,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":455311360,"heapTotal":363970560,"heapUsed":280787000,"external":8165350,"arrayBuffers":5140705}},"os":{"loadavg":[7.09814453125,10.39013671875,12.17578125],"uptime":2938256},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:40:17 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:40:17 GMT+0200 (Central European Summer Time)","process":{"pid":45405,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":446824448,"heapTotal":364232704,"heapUsed":280366248,"external":8165390,"arrayBuffers":5140745}},"os":{"loadavg":[8.5791015625,10.29443359375,12.0380859375],"uptime":2938302},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:40:45 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:40:45 GMT+0200 (Central European Summer Time)","process":{"pid":45486,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":452984832,"heapTotal":371310592,"heapUsed":278664584,"external":8165326,"arrayBuffers":5140681}},"os":{"loadavg":[8.533203125,10.11572265625,11.92138671875],"uptime":2938330},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:41:20 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:41:20 GMT+0200 (Central European Summer Time)","process":{"pid":45573,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":436895744,"heapTotal":361086976,"heapUsed":290630800,"external":8307035,"arrayBuffers":5282390}},"os":{"loadavg":[7.8681640625,9.7578125,11.7158203125],"uptime":2938365},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:41:52 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:41:52 GMT+0200 (Central European Summer Time)","process":{"pid":45691,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":357335040,"heapTotal":275775488,"heapUsed":152690296,"external":8165326,"arrayBuffers":5140681}},"os":{"loadavg":[7.81640625,9.556640625,11.5634765625],"uptime":2938397},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:42:28 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:42:28 GMT+0200 (Central European Summer Time)","process":{"pid":45863,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":335020032,"heapTotal":275513344,"heapUsed":152565256,"external":8165382,"arrayBuffers":5140737}},"os":{"loadavg":[7.37744140625,9.26953125,11.37744140625],"uptime":2938433},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:43:02 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:43:02 GMT+0200 (Central European Summer Time)","process":{"pid":45997,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":362332160,"heapTotal":276037632,"heapUsed":149354216,"external":8159463,"arrayBuffers":5134818}},"os":{"loadavg":[8.197265625,9.22998046875,11.27490234375],"uptime":2938467},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:45:11 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:45:11 GMT+0200 (Central European Summer Time)","process":{"pid":46339,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":378142720,"heapTotal":275054592,"heapUsed":144711688,"external":8151183,"arrayBuffers":5126538}},"os":{"loadavg":[6.98974609375,8.326171875,10.626953125],"uptime":2938596},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:45:32 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:45:32 GMT+0200 (Central European Summer Time)","process":{"pid":47084,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":384712704,"heapTotal":278462464,"heapUsed":144121496,"external":8195908,"arrayBuffers":5126546}},"os":{"loadavg":[6.2734375,8.04345703125,10.45703125],"uptime":2938617},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:46:29 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:46:29 GMT+0200 (Central European Summer Time)","process":{"pid":47694,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":347881472,"heapTotal":274464768,"heapUsed":149262824,"external":8157094,"arrayBuffers":5132449}},"os":{"loadavg":[7.7861328125,8.111328125,10.3251953125],"uptime":2938674},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:46:29 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:46:29 GMT+0200 (Central European Summer Time)","process":{"pid":47679,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":348995584,"heapTotal":278462464,"heapUsed":144093296,"external":8187780,"arrayBuffers":5126610}},"os":{"loadavg":[7.7861328125,8.111328125,10.3251953125],"uptime":2938674},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:47:07 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:47:07 GMT+0200 (Central European Summer Time)","process":{"pid":47927,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":341917696,"heapTotal":258277376,"heapUsed":151550344,"external":8200562,"arrayBuffers":5175917}},"os":{"loadavg":[7.02783203125,7.86279296875,10.130859375],"uptime":2938712},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:47:07 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133,6133]},"exception":true,"date":"Wed Oct 01 2025 11:47:07 GMT+0200 (Central European Summer Time)","process":{"pid":47928,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":346996736,"heapTotal":277938176,"heapUsed":143408832,"external":8200834,"arrayBuffers":5126474}},"os":{"loadavg":[7.02783203125,7.86279296875,10.130859375],"uptime":2938712},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/middleware/error.middleware.ts[0m:[93m9[0m:[93m3[0m - [91merror[0m[90m TS6133: [0m'next' is declared but its value is never read.
+
+[7m9[0m   next: NextFunction
+[7m [0m [91m  ~~~~[0m
+[96msrc/api/middleware/error.middleware.ts[0m:[93m38[0m:[93m40[0m - [91merror[0m[90m TS6133: [0m'res' is declared but its value is never read.
+
+[7m38[0m export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+[7m  [0m [91m                                       ~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:47:42 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133]},"exception":true,"date":"Wed Oct 01 2025 11:47:42 GMT+0200 (Central European Summer Time)","process":{"pid":48048,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":351010816,"heapTotal":280035328,"heapUsed":171002368,"external":8164077,"arrayBuffers":5139432}},"os":{"loadavg":[7.0390625,7.79248046875,10.013671875],"uptime":2938747},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:47:42 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133]},"exception":true,"date":"Wed Oct 01 2025 11:47:42 GMT+0200 (Central European Summer Time)","process":{"pid":48049,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":349880320,"heapTotal":279511040,"heapUsed":172224480,"external":8164093,"arrayBuffers":5139448}},"os":{"loadavg":[7.0390625,7.79248046875,10.013671875],"uptime":2938747},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:48:15 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133]},"exception":true,"date":"Wed Oct 01 2025 11:48:15 GMT+0200 (Central European Summer Time)","process":{"pid":48179,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":347160576,"heapTotal":277938176,"heapUsed":171324640,"external":8164181,"arrayBuffers":5139536}},"os":{"loadavg":[6.84619140625,7.68212890625,9.89599609375],"uptime":2938780},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-10-01 11:48:15 [error] : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {"error":{"diagnosticCodes":[6133]},"exception":true,"date":"Wed Oct 01 2025 11:48:15 GMT+0200 (Central European Summer Time)","process":{"pid":48181,"uid":501,"gid":20,"cwd":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend","execPath":"/opt/homebrew/Cellar/node/24.8.0/bin/node","version":"v24.8.0","argv":["/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/.bin/ts-node","/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/src/index.ts"],"memoryUsage":{"rss":344162304,"heapTotal":260374528,"heapUsed":178522704,"external":8213576,"arrayBuffers":5188931}},"os":{"loadavg":[6.84619140625,7.68212890625,9.89599609375],"uptime":2938780},"trace":[{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":859,"method":null,"native":false},{"column":19,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":863,"method":null,"native":false},{"column":36,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":1077,"method":null,"native":false},{"column":41,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":1433,"method":"compile","native":false},{"column":30,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1617,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1893,"method":null,"native":false},{"column":12,"file":"/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1621,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1480,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1299,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false}]}
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/api/routes/campaign.routes.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS6133: [0m'authorize' is declared but its value is never read.
+
+[7m4[0m import { authenticate, authorize } from '../middleware/auth.middleware';
+[7m [0m [91m                       ~~~~~~~~~[0m
+
+    at createTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/siqihsiang/Desktop/Python/PProjects/hackathon_kolomolo_temporal/social-campaign-backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)

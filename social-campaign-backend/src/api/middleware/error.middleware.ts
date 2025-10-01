@@ -3,10 +3,10 @@ import { ApiError } from '../../types';
 import logger from '../../utils/logger';
 
 export const errorHandler = (
-  err: Error,
+  err: Error | ApiError,
   req: Request,
   res: Response,
-  next: NextFunction
+  _next: NextFunction
 ): void => {
   let error = err;
 
@@ -35,7 +35,7 @@ export const errorHandler = (
   });
 };
 
-export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+export const notFound = (req: Request, _res: Response, next: NextFunction): void => {
   const error = new ApiError(404, `Not found - ${req.originalUrl}`);
   next(error);
 };

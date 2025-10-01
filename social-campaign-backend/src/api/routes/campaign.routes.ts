@@ -1,6 +1,7 @@
 import { Router } from 'express';
-import * as campaignController from '../controllers/campaign.controller';
-import { authenticate, authorize } from '../middleware/auth.middleware';
+// Use mock controller for now to avoid Temporal dependencies
+import * as campaignController from '../controllers/campaign.controller.mock';
+import { authenticate } from '../middleware/auth.middleware';
 import { body, param, query } from 'express-validator';
 
 const router = Router();
