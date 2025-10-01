@@ -1,5 +1,22 @@
 # AI-Powered Social Media Campaign Backend
 
+## Temporal Server Setup
+
+To run workflows, you need a Temporal server running locally or remotely.
+
+### Quick Start (Local Docker)
+
+1. **Install Docker** if you haven't already: https://docs.docker.com/get-docker/
+2. **Start Temporal Server**:
+   ```bash
+   docker run --rm -p 7233:7233 temporalio/temporal:latest
+   ```
+   This starts Temporal on port 7233.
+
+For advanced setup or production deployment, see [Temporal Documentation](https://docs.temporal.io/).
+
+# AI-Powered Social Media Campaign Backend
+
 A robust backend system for managing AI-powered social media campaigns across LinkedIn, X (Twitter), and Instagram. Built with TypeScript, Express, Temporal workflows, and Google Gemini AI.
 
 ## Features
