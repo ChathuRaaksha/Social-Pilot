@@ -62,14 +62,14 @@ Social Pilot is a comprehensive solution for creating, managing, and automating 
 - **Form Handling**: React Hook Form with Zod validation
 
 ### Backend
-- **Runtime**: Node.js 18+
-- **Framework**: Express.js with TypeScript
+- **Runtime**: Python 3.9+
+- **Framework**: Flask with CORS support
 - **Workflow Engine**: Temporal.io
 - **AI Engine**: Google Gemini AI
-- **Database**: PostgreSQL with Sequelize ORM
-- **Authentication**: JWT
-- **Logging**: Winston
-- **API Documentation**: OpenAPI/Swagger
+- **Database**: PostgreSQL with SQLAlchemy ORM
+- **Database Client**: Supabase Python SDK
+- **Async Support**: asyncio for high-performance operations
+- **Type Safety**: Pydantic for data validation
 
 ## 🚀 Quick Start
 
@@ -96,10 +96,21 @@ Before you begin, ensure you have the following installed:
    npm install
    ```
 
-3. **Install Backend Dependencies**
+3. **Install Backend Dependencies (Python)**
    ```bash
    cd ../social-campaign-backend
-   npm install
+   
+   # Create virtual environment
+   python -m venv venv
+   
+   # Activate virtual environment
+   # On macOS/Linux:
+   source venv/bin/activate
+   # On Windows:
+   # venv\Scripts\activate
+   
+   # Install dependencies
+   pip install -r requirements.txt
    ```
 
 ### Configuration
@@ -135,65 +146,61 @@ Before you begin, ensure you have the following installed:
    ```
 
 2. **Configure environment variables**
-   Edit `.env` and add:
+   Edit `.env` and add your API keys:
    ```env
-   PORT=3000
-   NODE_ENV=development
-   
-   # Database
-   DB_HOST=localhost
-   DB_PORT=5432
-   DB_NAME=social_campaigns
-   DB_USER=your_db_user
-   DB_PASSWORD=your_db_password
-   
-   # Google Gemini AI
-   GOOGLE_GEMINI_API_KEY=your_gemini_api_key
+   PORT=8080
+   FLASK_ENV=development
    
    # Temporal
-   TEMPORAL_ADDRESS=localhost:7233
+   TEMPORAL_HOST=localhost
+   TEMPORAL_PORT=7233
    
-   # JWT
-   JWT_SECRET=your_jwt_secret
+   # Google Gemini AI (Required)
+   GOOGLE_GEMINI_API_KEY=your_gemini_api_key
    
    # Social Media APIs (optional for development)
    LINKEDIN_CLIENT_ID=your_linkedin_client_id
    LINKEDIN_CLIENT_SECRET=your_linkedin_client_secret
    X_API_KEY=your_x_api_key
    X_API_SECRET=your_x_api_secret
+   
+   # Database (if using persistence layer)
+   DATABASE_URL=postgresql://user:password@localhost:5432/social_pilot
    ```
 
-3. **Set up PostgreSQL database**
+3. **Start Temporal Server** (using Docker)
    ```bash
-   createdb social_campaigns
-   npm run db:migrate
-   ```
-
-4. **Start Temporal Server** (using Docker)
-   ```bash
-   docker run --rm -p 7233:7233 temporalio/temporal:latest
+   docker run --rm -p 7233:7233 temporalio/auto-setup:latest
    ```
 
 ### Running the Application
 
 #### Development Mode
 
-1. **Start the Backend** (API + Temporal Worker)
+1. **Start the Temporal Worker** (in one terminal)
    ```bash
    cd social-campaign-backend
-   npm run temporal:dev
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   python worker.py
    ```
 
-2. **Start the Frontend** (in a new terminal)
+2. **Start the Backend API** (in another terminal)
+   ```bash
+   cd social-campaign-backend
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   python api.py
+   ```
+
+3. **Start the Frontend** (in a third terminal)
    ```bash
    cd frontend
    npm run dev
    ```
 
-3. **Access the application**
+4. **Access the application**
    - Frontend: http://localhost:5173
-   - Backend API: http://localhost:3000
-   - Temporal UI: http://localhost:8080
+   - Backend API: http://localhost:8080
+   - Temporal UI: http://localhost:8088
 
 #### Production Mode
 
@@ -203,16 +210,18 @@ Before you begin, ensure you have the following installed:
    npm run build
    ```
 
-2. **Build the Backend**
+2. **Start the Backend with Gunicorn**
    ```bash
    cd social-campaign-backend
-   npm run build
-   npm start
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   gunicorn -w 4 -b 0.0.0.0:8080 --timeout 120 api:app
    ```
 
 3. **Start Temporal Worker** (separate process)
    ```bash
-   npm run temporal:worker
+   cd social-campaign-backend
+   source venv/bin/activate
+   python worker.py
    ```
 
 ## 📚 API Documentation
