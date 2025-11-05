@@ -1,0 +1,10 @@
+project_id = "vgaqliwcwnwkkaeunfec"
+
+[functions.generate-posts]
+verify_jwt = false
+
+[functions.temporal-webhook]
+verify_jwt = false
+
+[functions.schedule-post]
+verify_jwt = false

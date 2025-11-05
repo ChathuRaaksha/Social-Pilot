@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SocialPilot Design System - Brand colors and design tokens */
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 209 61% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 209 61% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 209 61% 16%;
+
+    /* SocialPilot Brand Colors */
+    --primary: 355 85% 58%; /* Red #E63946 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 183 25% 75%; /* Light Blue #A8DADC */
+    --secondary-foreground: 209 61% 16%;
+
+    --accent: 209 61% 16%; /* Navy #1D3557 */
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 183 25% 94%;
+    --muted-foreground: 209 30% 40%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 183 25% 88%;
+    --input: 183 25% 88%;
+    --ring: 355 85% 58%;
+
+    /* SocialPilot Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(355 75% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(183 35% 85%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(183 25% 97%) 100%);
+
+    /* SocialPilot Shadows */
+    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--accent) / 0.1);
+    --shadow-hero: 0 20px 60px -10px hsl(var(--primary) / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 209 61% 8%;
+    --foreground: 183 25% 94%;
+
+    --card: 209 55% 10%;
+    --card-foreground: 183 25% 94%;
+
+    --popover: 209 55% 10%;
+    --popover-foreground: 183 25% 94%;
+
+    --primary: 355 85% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 209 40% 20%;
+    --secondary-foreground: 183 25% 94%;
+
+    --accent: 183 25% 75%;
+    --accent-foreground: 209 61% 16%;
+
+    --muted: 209 40% 15%;
+    --muted-foreground: 183 15% 65%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 209 40% 18%;
+    --input: 209 40% 18%;
+    --ring: 355 85% 58%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(355 75% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(209 50% 25%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(209 61% 25%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(209 50% 12%) 100%);
+
+    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.4);
+    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.1);
+    --shadow-hero: 0 20px 60px -10px hsl(var(--primary) / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

@@ -4,3 +4,4 @@
 2025-10-01 11:49:26 [info] : Server running on port 3000 in development mode
 2025-10-01 11:49:26 [info] : Frontend URL: http://localhost:5173
 2025-10-01 11:49:26 [info] : Temporal address: localhost:7233
+2025-10-01 20:00:54 [info] : Temporal worker started {"taskQueue":"social-campaign-queue","namespace":"default"}
